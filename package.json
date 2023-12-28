@@ -1,0 +1,30 @@
+{
+  "name": "48-grupe-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "metodai:number": "node --watch metodai/number.js",
+    "tipas": "node --watch kintamieji/tipas.js",
+    "marksAverage": "node --watch functions/marksAverage.js",
+    "for": "node --watch ciklas/for.js",
+    "if": "node --watch palyginimas/if.js",
+    "sum": "node --watch functions/sum.js",
+    "empty": "node --watch functions/empty.js",
+    "array": "node --watch kintamieji/array.js",
+    "boolean": "node --watch kintamieji/boolean.js",
+    "string": "node --watch kintamieji/string.js",
+    "number": "node --watch kintamieji/number.js",
+    "number-nodemon": "nodemon kintamieji/number.js",
+    "dev": "nodemon index.js",
+    "fail": "node --watch index.js",
+    "demo": "echo \"Demon print\" && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marta (https://github.com/martalionaite)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
