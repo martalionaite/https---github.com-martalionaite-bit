@@ -13,10 +13,10 @@ comment
 BAZINIAI PROGRAMAVIMO KONCEPTAI:
 - duomenu tipai:
     - number
-    -string
-    -boolean
-    -array
-    -underfined
+    - string
+    - boolean
+    - array
+    - underfined
 - if
 - for
 - funcion

@@ -9,6 +9,7 @@ const marks8 = [10, -10];
 const marks9 = [10, 2, 0, -6, 8, -3.14, 4, 2.272, 6, 11, 200, 1000, 10.9999, 10.00001];  
 const marks10 = [10, -10, 0, 0.9999, 10.00001, 3.14, 'labas', true, false, [],
  NaN, Infinity, -Infinity, undefined, marksAverage ];
+ 
 function marksAverage(marks) {
     console.log('------------')
     if (marks.length === 0) {
