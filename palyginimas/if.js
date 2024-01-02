@@ -171,3 +171,6 @@ if (z <= x){
     console.log('Pomidoras');
 } else {
     console.log('Bandykite kita karta');} 
+
+
+console.clear();
