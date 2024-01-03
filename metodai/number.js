@@ -92,3 +92,18 @@ console.log(parseFloat((0.1 + 0.2).toFixed(10)));
 console.log('' + parseFloat((0.1 + 0.2).toFixed(10)));
 console.log((0.1 + 0.2).toFixed(1));
 
+const a = 3.1415;
+const b = a.toFixed(2);
+
+console.log(a, typeof a);
+console.log(b, typeof b);
+
+const c = parseInt(b) + parseInt (b);
+console.log(c);
+
+console.log(isNaN(3));
+console.log(isNaN(NaN));
+
+console.log(isFinite(NaN));
+console.log(isFinite(Infinity));
+console.log(isFinite(14562));
