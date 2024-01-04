@@ -100,3 +100,38 @@ const raides = 'Raudonas pomidoras'.split ('');
 console.log(raides)
 
 
+console.log('----------->');
+
+
+console.log('PoMiDoRaS'.toLowerCase);
+console.log('PoMiDoRaS'.toUpperCase);
+
+const pomBad = 'PoMiDoRaS';
+
+function makeItGood(text) {
+    return text[0].toUpperCase() + text.toLowerCase().slice(1);
+}
+
+const pomGood = makeItGood(pomBad);
+console.log(pomBad, '---->', pomGood);
+
+console.log('----------->');
+console.log(`"${'Labas'.trim()}"`);
+console.log(`"${'Labas'.trimStart()}"`);
+console.log(`"${'labas'. trimEnd()}"`);
+
+console.log(`"${'rikik        '.trim()}"`);
+console.log(`"${'rikik        '.trimStart()}"`);
+console.log(`"${'rikik        '.trimEnd()}"`);
+
+console.log(`"${'     rokoko'.trim()}"`);
+console.log(`"${'     rokoko'.trimStart()}"`);
+console.log(`"${'     rokoko'.trimEnd()}"`);
+
+console.log(`"${'     pomidoras     '.trim()}"`);
+console.log(`"${'     pomidoras     '.trimStart()}"`);
+console.log(`"${'     pomidoras     '.trimEnd()}"`);
+
+console.log(`"${'labas         rytas'.trim()}"`);
+console.log(`"${'labas         rytas'.trimStart()}"`);
+console.log(`"${'labas         rytas'.trimEnd()}"`);
