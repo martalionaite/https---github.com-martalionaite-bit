@@ -21,7 +21,8 @@ a = a + 5;      ->      a += 5;
 a = a - 5;      ->      a -= 5;
 a = a * 5;      ->      a *= 5;
 a = a / 5;      ->      a /= 5;
-a = a % 5;      ->      a %= 5;
+a = a % 5;      ->      a %= 5;    (leikana)
+a = a ** 5;     ->      a **= 5;    (kelimas laipsniu)
 
 MATEMATINIAI OPERATORIAI:
 ++ (didinti 1 vienetu) 
