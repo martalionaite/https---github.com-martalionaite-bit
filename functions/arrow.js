@@ -34,3 +34,29 @@ console.log(`${n1} * ${n1} = ${square(n1)}`);
 const cube = a =>  a ** 3;
 
 console.log(`${n2} * ${n2} * ${n2} = ${cube(n2)}`);
+
+// chuck Norris -> C.N.
+// Pamela Anderson -> P.A.
+
+function abbrivation(text) {
+    const words = text.split(' ');
+    let ans = '';
+for (let i = 0; i < words.length; i++) {
+  const word = words[i];
+  ans += word[0] + '.';
+}
+return ans;
+}
+
+const abbr = t => t.split(' ').map(s => s [0] + '.'). join('');
+console.log(abbrivation('Chuck Norris'));
+console.log(abbrivation('Pamela Anderson'));
+console.log(abbrivation('Jan Clod Van Dam'));
+console.log(abbrivation('Jan Clod VanDam'));
+console.log(abbrivation('Super Jan Clod Van Dam'));
+console.log('------------------------------------->');
+console.log(abbr('Chuck Norris'));
+console.log(abbr('Pamela Anderson'));
+console.log(abbr('Jan Clod Van Dam'));
+console.log(abbr('Jan Clod VanDam'));
+console.log(abbr('Super Jan Clod Van Dam'));
