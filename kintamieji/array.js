@@ -125,3 +125,4 @@ const a5 = 'Ona'
 const studentai4 = `Atbuline tvarka: ${a5}, ${a4}, ${a3}, ${a2}, ${a1}.`;
 console.log(studentai4);
 
+
