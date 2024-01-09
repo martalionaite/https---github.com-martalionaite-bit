@@ -107,3 +107,14 @@ console.log(isNaN(NaN));
 console.log(isFinite(NaN));
 console.log(isFinite(Infinity));
 console.log(isFinite(14562));
+
+console.clear();
+
+console.log(Math.PI);
+console.log(Math.E);
+
+const max1 = Math.max(1, 2, 3);
+console.log(max1);
+
+const max2 = Math.max(...[1, 2, 3]);
+console.log(max2);

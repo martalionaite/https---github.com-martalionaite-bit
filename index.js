@@ -16,9 +16,12 @@ BAZINIAI PROGRAMAVIMO KONCEPTAI:
     - string
     - boolean
     - array
-    - underfined
+    - underfined (kompas nezino reiksmes, nes as niekada jos nedaviau)
+    - null (kompas nezino reiksmes, nes as dar nedaviau, bet ketinu duoti)
+    - object
 - if
 - for
 - funcion
 - events
 */
+

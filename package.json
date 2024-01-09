@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "object": "node --watch kintamieji/object.js",
+    "biggest": "node --watch uzdaviniai/biggest.js",
     "number-size": "node --watch uzdaviniai/number-size.js",
     "text-reverse": "node --watch uzdaviniai/text-reverse.js",
     "hof": "node --watch metodai/array-hof.js",
