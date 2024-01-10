@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "reduce": "node --watch metodai/reduce.js",
     "sort": "node --watch metodai/sort.js",
     "map": "node --watch metodai/map.js",
     "filter": "node --watch metodai/filter.js",
