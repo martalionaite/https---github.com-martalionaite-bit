@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "studentai": "node --watch uzdaviniai/studentai.js",
     "reduce": "node --watch metodai/reduce.js",
     "sort": "node --watch metodai/sort.js",
     "map": "node --watch metodai/map.js",
