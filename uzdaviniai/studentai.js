@@ -52,3 +52,17 @@ const classAverage = students
     .reduce((t, average) => t + average, 0) / students.length;
 
 console.log(classAverage);
+
+let bendriPazymiai = [];
+
+for (let i = 0; i < students.length; i++) {
+    bendriPazymiai = bendriPazymiai.concat(students[i].marks);
+}
+
+console.log(bendriPazymiai);
+
+for (const student of students) {
+    if (student.marks.length > 2) {
+        console.log(student.name);
+    }
+}

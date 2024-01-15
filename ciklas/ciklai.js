@@ -37,3 +37,18 @@ if (kaDarytiIfui(a, b)) {
 } else {
     console.log('--- NE');
 }
+
+console.clear();
+
+const colorList = ['red', 'green', 'blue', 'black', 'white', 'yellow'];
+
+console.log('FOR: ----------------');
+for (let i = 0; i < colorList.length; i++) {
+    const color = colorList[i];
+    console.log(color);
+}
+
+console.log('FOR - OF: ------------');
+for (const color of colorList) {
+    console.log(i++, color);
+}
