@@ -5,6 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "darbai": "node --watch uzdaviniai/darbai.js",
+    "daibai": "node --watch darbai.js",
     "destructuring": "node --watch operators/destructuring.js",
     "ciklai": "node --watch ciklas/ciklai.js",
     "ternary": "node --watch palyginimas/ternary.js",
