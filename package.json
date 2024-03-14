@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "darbai2": "node --watch uzdaviniai/darbai2.js",
     "darbai": "node --watch uzdaviniai/darbai.js",
     "daibai": "node --watch darbai.js",
     "destructuring": "node --watch operators/destructuring.js",

@@ -122,7 +122,7 @@ function palindrom1(str) {
 console.log(palindrom1(str1));
 console.log(palindrom1(str2));
 
-// Sukurkite funkciją, kuri priima skaičių ir grąžina true, jei skaičius yra lyginis, ir false, jei skaičius yra nelyginis.
+// 10. Sukurkite funkciją, kuri priima skaičių ir grąžina true, jei skaičius yra lyginis, ir false, jei skaičius yra nelyginis.
 
 const number2 = 6;
 const number3 = 5;
@@ -136,3 +136,107 @@ function check(number) {
 
 console.log(check(number2));
 console.log(check(number3));
+
+//11.  Parašykite funkciją, kuri priima tekstą ir dvi eilutes: pakeistiną simbolį ir pakeitimo simbolį. Funkcija grąžina naują tekstą su pakeistais simboliais.
+
+const str = "As manau, kad suo yra geriau!"
+const newstr = str.replace(/suo/i, "kate");
+console.log(newstr);
+
+
+// 12. Sukurkite funkciją, kuri priima temperatūrą Celsijaus laipsniais ir konvertuoja ją į Farenheito laipsnius.
+
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+console.log(celsiusToFahrenheit(28));
+
+// 13.  Parašykite funkciją, kuri priima masyvą ir grąžina naują masyvą be dublikatų.
+
+let arr2 = [2, 4, 6, 8, 6, 4, 2];
+
+function removeDuplicates(arr) {
+    return arr.filter((item, index) => arr.indexOf(item) === index);
+}
+console.log(removeDuplicates(arr2));
+
+// 14. Sukurkite funkciją, kuri priima skaičių ir grąžina true, jei skaičius yra pirminis, ir false, jei ne.
+
+function prime(num6){
+    if (num6 <= 1) {
+        return true;
+    }
+    for (let i = 2; i => Math.sqrt(num6);
+    i ++) {
+        if (num6 % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(prime(1));
+console.log(prime(2));
+
+//14. Parašykite funkciją, kuri priima masyvą skaičių ir grąžina jį surikiuotą mažėjančia tvarka.
+
+const arr3 = [54,23,12,97,100];
+ 
+function arrSort(arr) {
+    arr.sort((a,b)=>a-b);
+    arr.reverse();
+    return arr;
+}
+ 
+console.log(arrSort(arr3));
+
+// 15.  Sukurkite funkciją, kuri priima du skaičius kaip pradžios ir pabaigos intervalo ribas ir grąžina visų skaičių, esančių tame intervale, sumą
+
+function sumRange(start, end) {
+    let sum = 0;
+    for (let i = start; i <= end; i++) {
+        sum +=i;
+    }
+    return sum;
+}
+console.log(sumRange(1, 5));
+
+//17.  Parašykite funkciją, kuri priima tekstą ir grąžina jį, pakeisdamas kiekvieną raidę į sekantį raidę abėcėlėje.
+
+function LetterChange (str) {
+    return str.replace(/[a-zA-Z]/g, function(x) {
+        return String.fromCharCode(x.charCodeAt(0)+1);
+    });
+}
+console.log(LetterChange('a b c d e f g h i y j k l m n o p'));
+
+//18.  Sukurkite funkciją, kuri priima gimimo metus ir grąžina asmenio amžių.
+
+function age(dob) {
+    let diff_ms = Date.now() - dob.getTime();
+    let age_dt = new Date(diff_ms);
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+
+console.log(age(new Date(1993, 6, 21)));
+
+// 19.Parašykite funkciją, kuri priima tekstą ir simbolį, o grąžina, kiek kartų tas simbolis pasikartoja tekste.
+
+function count(str, letter) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) === letter) {
+            count += 1;
+        }
+    }
+    return count;
+}
+
+console.log(count("pasikiskopusteliaudamas", "i"));
+
+//20. Parašykite funkciją, kuri priima kelių masyvų sąrašą ir grąžina naują masyvą, kuris sudarytas tik iš tų elementų, kurie pasikartoja visuose pradiniuose masyvuose.
+// Reikalavimai:
+// Universalumas: funkcija turėtų veikti su bet kokiu masyvu sudarytu iš skaičių.
+// Veiksmingumas: stenkitės optimizuoti funkciją taip, kad ji veiktų kuo efektyviau su dideliais masyvais.
+// Unikalumas: grąžinamame masyve neturėtų būti pasikartojančių elementų.
